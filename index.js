@@ -1,15 +1,28 @@
 // JavaScript File
 
-// variables assigned to calculate the area and circumference of a circle
-function Area(){
-var diameter = document.getElementById("diameter");
-var radius = document.getElementById("radius");
-var diametervalue = +diameter.value;
-var radiusvalue = +(diameter.value/2);
-var result1 = ((diameter.value/2)*(diameter.value/2)*Math.PI);
-var result2  = (diameter.value*Math.PI);
-var divresult1 = document.getElementById("divresult1");
-var divresult2 = document.getElementById("divresult2");
-divresult1.innerHTML = result1;
-divresult2.innerHTML = result2;
+// random value generated 
+var y = Math.floor(Math.random() * 6 + 1); 
+  
+// counting the number of guesses 
+// made for correct Guess 
+var guess = 1; 
+  
+document.getElementById("submitguess").onclick = function(){ 
+  
+// number guessed by user      
+var x = document.getElementById("number").value; 
+
+if(x == y) 
+{     
+  alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " + guess + " GUESS "); 
+} 
+else if(x > y) /* if guessed number is greater than actual number*/ 
+{     
+  guess++; 
+  alert("OOPS SORRY!! TRY A SMALLER NUMBER"); 
+} 
+else
+{ 
+  guess++; 
+  alert("OOPS SORRY!! TRY A BIGGER NUMBER") 
 }
