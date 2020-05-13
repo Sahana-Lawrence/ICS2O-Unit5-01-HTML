@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+}
+
+#diameter #radius #btnarea #divresult1 #divresult2 {
+  font-family: courier;
+}
+
+h1 {
+  color: teal;
+  text-align: center;
+}
