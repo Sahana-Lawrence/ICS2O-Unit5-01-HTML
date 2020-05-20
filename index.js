@@ -15,11 +15,11 @@ if(x == y)
 else if(x > y) /* if guessed number is greater than actual number*/
 {
   guesses++;
-  alert("OOPS SORRY!! TRY A SMALLER NUMBER");
+  alert("SORRY WRONG!! TRY A SMALLER NUMBER");
 }
 else
 {
   guesses++;
-  alert("OOPS SORRY!! TRY A BIGGER NUMBER");
+  alert("SORRY WRONG!! TRY A BIGGER NUMBER");
 }
 }
